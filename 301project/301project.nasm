@@ -1,11 +1,12 @@
 extern puts
 extern printf
-push rdi ; user input
+push rdi ; netrun user input for menu
+; working options are 1 or 2
 
 mov rdi,Menu ; rdi == address in memory where the string is stored
-call puts
+call puts ; print menu message
 
-pop rax
+pop rax ; 
 cmp rax,1
 je Encrypt
 
@@ -16,6 +17,7 @@ je Decrypt
 ret
 
 Encrypt:
+; This is as far as I got
 	push rax
 	mov rdi, msg
 	call puts
@@ -41,6 +43,12 @@ msg:
 	dw `0x34534`,0
 msg2:
 	dw `0x39243`,0
+
+
+
+
+
+
 
 
 
