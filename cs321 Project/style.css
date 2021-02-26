@@ -18,6 +18,14 @@ body {
     font-family: "Raleway", sans-serif;
 }
 
+.tools {
+    background: rgb(192, 192, 192);
+    position: absolute;
+    top: 50px;
+    width: 50px;
+    height: 600px;
+}
+
 .app .controls {
     height: 50px;
     display: flex;
