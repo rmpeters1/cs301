@@ -18,33 +18,44 @@
         <div class="tools">
             <div class="controls">
                 <div class="tools-container">
+                    <div class="type">
+                        <input type="radio" name="pen-type" id="pen-erase">
+                        <label for="pen-erase">
+                            <i class="fas fa-eraser"></i>
+                        </label>
+                        <input type="radio" name="pen-type" id="pen-fill">
+                        <label for="pen-fill">
+                            <i class="fas fa-fill"></i>
+                        </label>
+                        <input type="radio" name="pen-type" id="pen-pencil" checked>
+                        <label for="pen-pencil">
+                            <i class="fas fa-pencil-alt"></i>
+                        </label>
+                        <input type="radio" name="pen-type" id="pen-brush">
+                        <label for="pen-brush">
+                            <i class="fa fa-paint-brush"></i>
+                        </label>
+                    </div>
 
-                </div>
-                <div class="type">
-                    <input type="radio" name="pen-type" id="pen-pencil" checked>
-                    <label for="pen-pencil">
-                        <i class="fas fa-pencil-alt"></i>
-                </label>
-                    <input type="radio" name="pen-type" id="pen-brush">
-                    <label for="pen-brush">
-                  <i class="fa fa-paint-brush"></i>
-                </label>
-                </div>
-                <div class="size">
-                    <label for="pen-size">Size</label>
-                    <input type="range" id="pen-size" min="1" max="50">
-                </div>
-                <div class="color">
-                    <label for="pen-color">Color</label>
-                    <input type="color" id="pen-color" value="#000">
-                </div>
-                <div class="actions">
-                    <button id="reset-canvas">Reset</button>
-                    <button id="save-canvas">Save</button>
+
+                    <div class="actions">
+                        <button id="reset-canvas">Reset</button>
+                        <button id="save-canvas">Save</button>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="colors"></div>
+        <div class="size">
+            <div class="size">
+                <input type="range" id="pen-size" min="1" max="50">
+            </div>
+        </div>
+        <div class="colors">
+            <div class="color">
+                <label for="pen-color">Color</label>
+                <input type="color" id="pen-color" value="#000">
+            </div>
+        </div>
     </div>
 
 </body>

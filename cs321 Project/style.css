@@ -27,10 +27,26 @@ body {
 .tools-container {
     width: 50px;
     height: 200px;
-    background: blue;
+    background: rgb(192, 192, 192);
+    border-width: 2px;
+    border-style: outset;
+    border-top-color: white;
+    border-left-color: white;
     float: left;
     margin: 2px;
     margin-top: 20px;
+}
+
+.size {
+    position: fixed;
+    top: 300px;
+    width: 50px;
+    background: rgb(192, 192, 192);
+    border-width: 2px;
+    border-style: inset;
+    border-right-color: white;
+    border-bottom-color: white;
+    border-color: 2px rgb(128, 128, 128);
 }
 
 .colors {
