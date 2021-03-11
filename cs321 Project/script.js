@@ -9,15 +9,17 @@ function setup() {
 }
 
 function mouseDragged() {
-    let type = _("#pen-pencil").checked ? "pencil" : "brush";
     let size = parseInt(_("#pen-size").value);
     let color = _("#pen-color").value;
     fill(color);
     stroke(color);
-    if (type == "pencil") {
+    if (document.getElementById("pen-pencil").checked) {
         line(pmouseX, pmouseY, mouseX, mouseY);
-    } else {
+    } else if (document.getElementById("pen-brush").checked) {
         ellipse(mouseX, mouseY, size, size);
+    } else if (document.getElementById("pen-erase").checked) {
+        rect(mouseX, mouseY, size, size);
+        fill();
     }
 }
 _("#reset-canvas").addEventListener("click", function() {

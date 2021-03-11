@@ -54,5 +54,26 @@ body {
     position: fixed;
     bottom: 0;
     width: 100%;
-    height: 60px;
+    height: 70px;
+}
+
+.colorbox {
+    background: red;
+    position: relative;
+    left: 39px;
+    top: 9px;
+    margin: 2px;
+    height: 30px;
+    width: 245px;
+}
+
+.btn {
+    position: relative;
+    overflow: none;
+    letter-spacing: 1px;
+    border: none;
+    bottom: 6px;
+    left: 1px;
+    width: 13px;
+    height: 13px;
 }

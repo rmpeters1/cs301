@@ -7,7 +7,9 @@
     <title>paint</title>
     <link type="text/css" href="style.css" rel="stylesheet">
     <script src="script.js"></script>
-    <link type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <!--
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.6/p5.min.js"></script>
 </head>
 
@@ -19,19 +21,27 @@
             <div class="controls">
                 <div class="tools-container">
                     <div class="type">
-                        <input type="radio" name="pen-type" id="pen-erase">
+                        <input title="lasso select" type="radio" name="pen-type" id="pen-lasso">
+                        <label for="pen-lasso">
+                            <i class="fal fa-lasso"></i>
+                        </label>
+                        <input title="select" type="radio" name="pen-type" id="pen-select">
+                        <label for="pen-select">
+                            <i class="fal fa-square"></i>
+                        </label>
+                        <input title="eraser" type="radio" name="pen-type" id="pen-erase">
                         <label for="pen-erase">
                             <i class="fas fa-eraser"></i>
                         </label>
-                        <input type="radio" name="pen-type" id="pen-fill">
+                        <input title="fill" type="radio" name="pen-type" id="pen-fill">
                         <label for="pen-fill">
                             <i class="fas fa-fill"></i>
                         </label>
-                        <input type="radio" name="pen-type" id="pen-pencil" checked>
+                        <input title="pencil" type="radio" name="pen-type" id="pen-pencil" checked>
                         <label for="pen-pencil">
                             <i class="fas fa-pencil-alt"></i>
                         </label>
-                        <input type="radio" name="pen-type" id="pen-brush">
+                        <input title="brush" type="radio" name="pen-type" id="pen-brush">
                         <label for="pen-brush">
                             <i class="fa fa-paint-brush"></i>
                         </label>
@@ -51,9 +61,28 @@
             </div>
         </div>
         <div class="colors">
-            <div class="color">
-                <label for="pen-color">Color</label>
-                <input type="color" id="pen-color" value="#000">
+            <div class="colorbox">
+                <button type="button" class="btn" id="pen-color" value="#000"></button>
+                <button type="button" class="btn" id="pen-color2" value="red"></button>
+                <button type="button" class="btn" id="pen-color3" value="red"></button>
+                <button type="button" class="btn" id="pen-color4" value="red"></button>
+                <button type="button" class="btn" id="pen-color5" value="red"></button>
+                <button type="button" class="btn" id="pen-color6" value="red"></button>
+                <button type="button" class="btn" id="pen-color7" value="red"></button>
+                <button type="button" class="btn" id="pen-color8" value="red"></button>
+                <button type="button" class="btn" id="pen-color9" value="red"></button>
+                <button type="button" class="btn" id="pen-color10" value="red"></button>
+                <button type="button" class="btn" id="pen-color11" value="red"></button>
+                <button type="button" class="btn" id="pen-color12" value="red"></button>
+                <button type="button" class="btn" id="pen-color13" value="red"></button>
+                <button type="button" class="btn" id="pen-color14" value="red"></button>
+
+                <button type="button" class="btn" id="pen-color15" value="red"></button>
+
+                <!--
+                    <input type="color" id="pen-color2" value="#000">
+                -->
+
             </div>
         </div>
     </div>
