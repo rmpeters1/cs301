@@ -3,9 +3,10 @@ function _(selector) {
 }
 
 function setup() {
-    let canvas = createCanvas(650, 600);
+    let canvas = createCanvas(600, 400);
     canvas.parent("canvas-wrapper");
     background(255);
+
 }
 
 function mouseDragged() {
@@ -15,16 +16,20 @@ function mouseDragged() {
     stroke(color);
     if (document.getElementById("pen-pencil").checked) {
         line(pmouseX, pmouseY, mouseX, mouseY);
+        cPush();
     } else if (document.getElementById("pen-brush").checked) {
         ellipse(mouseX, mouseY, size, size);
     } else if (document.getElementById("pen-erase").checked) {
         rect(mouseX, mouseY, size, size);
         fill();
     }
+
 }
-_("#reset-canvas").addEventListener("click", function() {
+
+function resetCanvas() {
     background(255);
-});
+}
+
 _("#save-canvas").addEventListener("click", function() {
     saveCanvas(canvas, "sketch", "png");
 });

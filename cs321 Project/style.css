@@ -6,10 +6,12 @@
 
 body {
     background: #555;
+    height: 400px;
+    overflow: scroll;
 }
 
 .app {
-    position: fixed;
+    position: center;
     top: 0;
     width: 650px;
     height: 650px;
@@ -58,7 +60,7 @@ body {
 }
 
 .colorbox {
-    background: red;
+    background: rgb(192, 192, 192);
     position: relative;
     left: 39px;
     top: 9px;
