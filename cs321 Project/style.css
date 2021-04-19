@@ -79,3 +79,35 @@ body {
     width: 13px;
     height: 13px;
 }
+
+#pen-color {
+    background: red;
+}
+
+#pen-color2 {
+    background: blue;
+}
+
+#pen-color3 {
+    background: brown;
+}
+
+#pen-color4 {
+    background: rgb(150, 16, 105);
+}
+
+#pen-color5 {
+    background: rgb(145, 29, 48);
+}
+
+#pen-color6 {
+    background: blue;
+}
+
+#pen-color7 {
+    background: rgb(159, 185, 10);
+}
+
+#pen-color8 {
+    background: rgb(13, 228, 13);
+}
